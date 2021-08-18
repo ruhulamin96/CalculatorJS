@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <table class="calculator">
+      <tr>
+        <td colspan="4">
+          <input type="text" value="" id="display" placeholder="0" disabled />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input
+            id="clear"
+            type="button"
+            value="CE"
+            onclick="display.value=''"
+          />
+        </td>
+        <td colspan="2">
+          <input id="clear" type="button" value="C" onclick="del()" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="8" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="9" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="/" onclick="dis(this.value)" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="5" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="6" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="*" onclick="dis(this.value)" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="2" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="3" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="-" onclick="dis(this.value)" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="." onclick="dis(this.value)" /></td>
+        <td><input type="button" value="0" onclick="dis(this.value)" /></td>
+        <td><input type="button" value="=" onclick="calculate()" /></td>
+        <td><input type="button" value="+" onclick="dis(this.value)" /></td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

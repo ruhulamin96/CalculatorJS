@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calculator {
+  background-color: black;
+  margin: 50px auto;
+}
+input[type="button"] {
+  padding: 0.5rem;
+  width: 6vw;
+  margin: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(61, 53, 53);
+  color: white;
+  border: 1px solid rgb(161, 91, 91);
+  border-radius: 10px;
+}
+input[type="text"] {
+  padding: 1rem;
+  width: 28vw;
+  font-size: 2rem;
+  text-align: right;
+}
+#clear {
+  padding: 0.3rem;
+  width: 13vw;
+  font-size: 2rem;
+}
